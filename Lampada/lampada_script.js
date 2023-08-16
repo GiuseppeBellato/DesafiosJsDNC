@@ -18,8 +18,14 @@ function desligar(){
 
 function quebrar(){
     lamp.src = 'img/quebrada.svg'
+    window.document.getElementById('troca').style.background = ' rgb(12, 112, 242)'
+    window.document.getElementById('troca').style.cursor = 'pointer'
 }
 
-function troca(){
-    lamp.src = 'img/desligada.svg'
+function troca(){ 
+    if(estaQuebrada()){
+        lamp.src = 'img/desligada.svg'
+        window.document.getElementById('troca').style.background = 'rgba(12, 112, 242, 0.329)'
+        window.document.getElementById('troca').style.cursor = 'default'
+    }
 }
