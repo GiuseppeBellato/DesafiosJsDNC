@@ -37,6 +37,13 @@ section{
     height: 30px;
     border-radius: 10px;
     font-size: large;
+    cursor: pointer;
+}
+
+.botao:hover{
+    scale: 1.05;
+    transition-duration: .3s;
+    box-shadow: 5px 5px 5px #484848;
 }
 
 .formulario {
@@ -45,4 +52,5 @@ section{
     border-style: none;
     height: 20px;
     width: 50%;
+    padding-left: 10px;
 }

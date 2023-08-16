@@ -1,9 +1,11 @@
+var res = window.document.getElementById('resposta')  
 
 function taboada(){
     var num = window.document.getElementById('num')
     var end = window.document.getElementById('end')
+    
+
     if (num.value.length == 0 || end.value.length == 0) {
-        var res = window.document.getElementById('resposta')
         res.innerHTML = 'ATENÇÃO, CONFIRA SEUS DADOS!! <br>'
         res.style.color = 'red'
     } else {
@@ -11,12 +13,8 @@ function taboada(){
         var e = Number(end.value)
         var x = 0
         var r = ''
-        var res = window.document.getElementById('resposta')
         res.style.color = 'black'
-
-       //Resolver questão de apagar o alerta
-
-        res.innerHTML += `A taboada do ${n} até o ${e} é: <br>`
+        res.innerHTML = `A taboada do ${n} até o ${e} é: <br>`
         do {
             r = n*x
             res.innerHTML += ` ${n} X ${x} = ${r} <br>`
@@ -27,4 +25,6 @@ function taboada(){
 
 function resetar(){
     window.document.getElementById('resposta').innerHTML = `Preencha os valores acima.`
+    window.document.getElementById('num').value = ''
+    window;document.getElementById('end').value = ''
 }
