@@ -20,3 +20,6 @@ function quebrar(){
     lamp.src = 'img/quebrada.svg'
 }
 
+function troca(){
+    lamp.src = 'img/desligada.svg'
+}
