@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taboada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="Imagens/DNC.svg" alt="Error" width="100">
+        <h1>Taboada</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                A taboada de qual número você deseja saber?<br>
+                <input type="number" class="formulario" id="num">
+            </p>
+            <p>
+               Até qual número?<br>
+                <input type="number" class="formulario" id="end">
+            </p>
+            <p>
+                <input type="button" value="Calcular" class="botao"  onclick="taboada()">
+                <input type="button" value="Resetar" class="botao" onclick="resetar()">
+            </p>
+        </div>
+        <div id="resposta">
+            <p>
+                Preencha os valores acima.
+            </p>
+        </div>
+    </section>
+
+    <script src="taboada_script.js"></script>
+</body>
+</html>
