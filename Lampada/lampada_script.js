@@ -19,3 +19,4 @@ function desligar(){
 function quebrar(){
     lamp.src = 'img/quebrada.svg'
 }
+
